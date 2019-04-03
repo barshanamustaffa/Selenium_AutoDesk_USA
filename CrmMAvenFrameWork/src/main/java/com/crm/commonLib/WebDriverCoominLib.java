@@ -21,7 +21,7 @@ public class WebDriverCoominLib extends BaseClass{
 		BaseClass.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	public void waitForElemetPresent(WebElement wb){
+	public void waitAndClick(WebElement wb){
 		WebDriverWait wait = new WebDriverWait(BaseClass.driver, 20);
 		wait.until(ExpectedConditions.visibilityOf(wb));
 	}
@@ -62,7 +62,7 @@ public class WebDriverCoominLib extends BaseClass{
 		act.moveToElement(wb).perform();
 	}
 	
-	public void waitAndClick(WebElement element) {
+	public void waitForElemetPresent(WebElement element) {
 		int count =0;
 		while (count<20) {
 			try {

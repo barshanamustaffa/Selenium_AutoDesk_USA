@@ -24,7 +24,7 @@ public class Home extends WebDriverCoominLib{
 	WebElement Opportunities;
 	@FindBy(linkText="Products")
 	WebElement Products;
-	@FindBy(linkText="Organizations")
+	@FindBy(xpath="//a[@href='index.php?module=Accounts&action=index']")
 	WebElement Organizations;
 	@FindBy(linkText="Email")
 	WebElement Email;
@@ -78,12 +78,13 @@ public class Home extends WebDriverCoominLib{
 
 	}
 	public void navigateToOrganizations(){ 
-		waitAndClick(Organizations);
+		Organizations.click();
 	}
 	public void navigateToContacts(){
 		waitAndClick(Contacts);
 
 	}
+	
 	public void navigateToOpportunities(){
 		waitAndClick(home);
 

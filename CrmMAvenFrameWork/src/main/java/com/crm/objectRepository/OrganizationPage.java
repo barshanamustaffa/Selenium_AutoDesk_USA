@@ -3,12 +3,26 @@ package com.crm.objectRepository;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class OrganizationPage {
-	@FindBy(linkText="Organizations")
+import com.crm.commonLib.WebDriverCoominLib;
+
+public class OrganizationPage extends WebDriverCoominLib{
+	@FindBy(xpath="//img[@alt='Create Organization...']")
     WebElement Org;
 	
 	
+	public WebElement getOrg() {
+		return Org;
+	}
+
+
+	public void setOrg(WebElement org) {
+		Org = org;
+	}
+
+
 	public void navigateToOrgPage() {
+		//waitForElemetPresent(Org);
 		Org.click();
+
 	}
 }
