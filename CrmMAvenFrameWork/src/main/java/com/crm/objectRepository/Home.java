@@ -24,7 +24,7 @@ public class Home extends WebDriverCoominLib{
 	WebElement Opportunities;
 	@FindBy(linkText="Products")
 	WebElement Products;
-	@FindBy(xpath="//a[@href='index.php?module=Accounts&action=index']")
+	@FindBy(linkText="Organizations")
 	WebElement Organizations;
 	@FindBy(linkText="Email")
 	WebElement Email;

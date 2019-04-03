@@ -1,7 +1,7 @@
 package com.crm.organizationtest;
 
 import org.openqa.selenium.support.PageFactory;
-
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.crm.commonLib.BaseClass;
@@ -13,11 +13,15 @@ import com.crm.objectRepository.OrganizationPage;
 public class OrganizationTest extends BaseClass{
 	@Test
 	public void createOrganizationTest() throws Throwable{
-		
+		/*
+		 * author-Barshana
+		 * parameters create organization
+		 * throws Throwable
+		 */
 	    FileLib excel = new FileLib();
 		String Orgname = excel.getExcelData("organization",1,1);
 		String web = excel.getExcelData("organization",2,1);
-		String tick = excel.getExcelData("organization",3,1); 
+		
 
 	 /* navigate to organization */
 		Home home = PageFactory.initElements(driver, Home.class);
@@ -27,8 +31,11 @@ public class OrganizationTest extends BaseClass{
 		orgpage.navigateToOrgPage();
      /* navigate to create organization*/
 		CreateNewOrganization org = PageFactory.initElements(driver,CreateNewOrganization.class);
-		org.createOrganization(Orgname,web,tick);
-		System.out.println("Test is pass");
+		org.createOrganization(Orgname,web);
+		/*verify create organisation*/
+		String actRes =org.getExpRes().getText();
+		boolean status=actRes.contains(Orgname);
+		Assert.assertEquals(status,true);
 		
 	}
 
