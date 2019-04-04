@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.organizationtest.OrganizationTest">
+      <class name="com.crm.organizationtest.OrgAdvancedsearchTest">
         <methods>
           <include name="configbeforeSuite"/>
           <include name="configAm"/>
           <include name="configBM"/>
+          <include name="afterClass"/>
           <include name="configBc"/>
-          <include name="createOrganizationTest"/>
+          <include name="configafterSuite"/>
+          <include name="AdvancedsearchTest"/>
         </methods>
-      </class> <!-- com.crm.organizationtest.OrganizationTest -->
+      </class> <!-- com.crm.organizationtest.OrgAdvancedsearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

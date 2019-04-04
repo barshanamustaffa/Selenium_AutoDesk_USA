@@ -31,124 +31,14 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">63.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">15.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">com.crm.organizationtest.OrganizationTest</td><td><a href="#m1"><b>configAm</b>  </a></td><td class="numi">1</td><td>1554280656306</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="2">com.crm.organizationtest.OrganizationTest</td><td><a href="#m2"><b>configafterSuite</b>  </a></td><td class="numi">1</td><td>1554280696709</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m3"><b>afterClass</b>  </a></td><td class="numi">1</td><td>1554280696667</td><td class="numi">0</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.crm.organizationtest.OrganizationTest</td><td><a href="#m4"><b>createOrganizationTest</b>  </a></td><td class="numi">1</td><td>1554280643962</td><td class="numi">12341</td></tr>
+<tr class="passedodd"><td rowspan="1">com.crm.organizationtest.OrgAdvancedsearchTest</td><td><a href="#m1"><b>AdvancedsearchTest</b>  </a></td><td class="numi">1</td><td>1554355109535</td><td class="numi">5376</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.crm.organizationtest.OrganizationTest:configAm</h2>
-<div style="padding-left:3em">
-<p>Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.linkText: Sign Out&apos; (tried for 20 second(s) with 500 milliseconds interval)</p>
-org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-<br/>at com.crm.commonLib.WebDriverCoominLib.waitAndClick(WebDriverCoominLib.java:26)
-<br/>at com.crm.objectRepository.Home.signOut(Home.java:135)
-<br/>at com.crm.commonLib.BaseClass.configAm(BaseClass.java:73)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-<br/>at java.lang.reflect.Method.invoke(Unknown Source)
-<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
-<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
-<br/>at org.testng.TestRunner.run(TestRunner.java:617)
-<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-<br/>at org.testng.TestNG.run(TestNG.java:1031)
-<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-<br/>1 lines not shown
-<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Out&quot;}
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-4BNTH8JI&apos;, ip: &apos;192.168.29.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\Varsha\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53154}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: dfdc258267790a94c972cbc22d4947fc
-*** Element info: {Using=link text, value=Sign Out}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-<br/>at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-<br/>at com.crm.commonLib.WebDriverCoominLib.waitAndClick(WebDriverCoominLib.java:26)
-<br/>at com.crm.objectRepository.Home.signOut(Home.java:135)
-<br/>at com.crm.commonLib.BaseClass.configAm(BaseClass.java:73)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-<br/>at java.lang.reflect.Method.invoke(Unknown Source)
-<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
-<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
-<br/>at org.testng.TestRunner.run(TestRunner.java:617)
-<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-<br/>at org.testng.TestNG.run(TestNG.java:1031)
-<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-<br/>1 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.crm.organizationtest.OrganizationTest:configafterSuite</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.crm.organizationtest.OrganizationTest:afterClass</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.crm.organizationtest.OrganizationTest:createOrganizationTest</h2>
+<h2 id="m1">com.crm.organizationtest.OrgAdvancedsearchTest:AdvancedsearchTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
